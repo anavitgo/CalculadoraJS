@@ -7,25 +7,28 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #333;
-  }
-  
-  #pai {
+}
+
+body h3 a {
+    text-decoration: none;
+}
+
+#pai {
     width: 250px;
     height: 570px;
     max-width: 80%;
     background-color: white;
     padding: 10px;
-  
-  }
-  
-  #mae {
+}
+
+#mae {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
 
-#titulos{
+#titulos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +40,7 @@ body {
     color: black;
 }
 
-#divDisplay{
+#divDisplay {
     display: flex;
     width: 100%;
     height: 5vh;
@@ -65,29 +68,28 @@ body {
     height: auto;
 }
 
-
-.botaoOperador{
+.botaoOperador {
     font-size: 30px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
 
-#CE{
+#CE {
     font-size: 25px;
 }
 
-button{
+button {
     width: 60px;
     text-align: center;
     font-size: 35px;
-    background-color:black;
+    background-color: black;
     color: white;
     border: darkslategray solid 1px;
     box-shadow: 1px 2px 3px 1px rgb(60, 70, 68);
     text-shadow: 1px 1px 3px rgb(17, 27, 17);
-  }
+}
 
-.botaoOperador :hover{
-    background-color:white; 
+.botaoOperador :hover {
+    background-color: white;
     color: black;
 }
