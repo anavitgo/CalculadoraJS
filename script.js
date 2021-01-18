@@ -9,17 +9,26 @@ function criaDigitos() {
         let botao = document.createElement("button");
         botao.textContent = i;
         botao.setAttribute("id", i);
-        document.getElementsByTagName("body")[0].appendChild(botao); //CUIDADO!! se forem colocar os botoes dentro de uma div para estilizarem, deem appenChild dos botoes na div dentro desse for
+        document.getElementsByTagName("body")[0].appendChild(botao);
+
+        let divDigitos = document.getElementById("divDigitos");
+        divDigitos.appendChild(botao);
+
+         //CUIDADO!! se forem colocar os botoes dentro de uma div para estilizarem, deem appenChild dos botoes na div dentro desse for
     }
 }
-
 
 function criaOperadores(operador) {
     let operadorCriado = document.createElement("button");
     operadorCriado.textContent = operador;
     operadorCriado.setAttribute("id", operador);
-    document.getElementsByTagName("body")[0].appendChild(operadorCriado); //CUIDADO!! Coloquei no body de novo, se forem usar flexbox e criarem uma div lembrem-se de dar append nela!
+    operadorCriado.setAttribute("class", "botaoOperador");
+    document.getElementsByTagName("body")[0].appendChild(operadorCriado); 
+    
+    let divOperadores = document.getElementById("divOperadores");
+    divOperadores.appendChild(operadorCriado);
 
+    //CUIDADO!! Coloquei no body de novo, se forem usar flexbox e criarem uma div lembrem-se de dar append nela!
 };
 
 criaDigitos();
